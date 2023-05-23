@@ -4,8 +4,18 @@ section .text
   global assembly
 
   assembly:
-    mov rbx, 5
-    mov rcx, 10
-    lea eax, [rcx + rbx*2 + 5]
+    mov rax, 12345
+    push rax ; move o valor armazenado em rax para a pilha
     
+    mov rax, 112233
+    pop rax ; remove o valor da pilha e armazena o valor em rax
+    
+    ;pseudo-codigo push:
+    ; ESP = ESP - 4 (IA-32)
+    ; [ESP] = operando
+
+    ;pseudo-codigo pop:
+    ; operando = [ESP]
+    ; ESP = ESP + 4 (IA-32)
+
     ret
