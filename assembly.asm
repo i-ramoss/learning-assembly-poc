@@ -1,14 +1,10 @@
 bits 64 ; diretiva que especifica o tamanho das instruções seguintes (12, 32 ou 64 bits)
 
+extern number
+
 section .text
   global assembly
-
   assembly:
-    mov eax, 3
-    call setarA
-
-    ret
-
-  setarA:
-    mov eax, 5
+    call number
+    add eax, 111
     ret
