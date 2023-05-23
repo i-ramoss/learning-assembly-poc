@@ -3,7 +3,7 @@
 int assembly(void);
 
 int main(void) {
-  printf("Result: %d\n", assembly());
+  printf("Result: %08x\n", assembly());
 
   return 0;
 }
