@@ -4,7 +4,8 @@ section .text
   global assembly
 
   assembly:
-    mov rax, 0x11223344aabbccdd
-    mov eax, 0x1234
+    mov rbx, 5
+    mov rcx, 10
+    lea eax, [rcx + rbx*2 + 5]
     
     ret

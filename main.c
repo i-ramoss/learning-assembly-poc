@@ -1,9 +1,9 @@
 #include <stdio.h>
 
-int assembly(void);
+int assembly(void);  // recebe como retorno valor armazenado no registrador eax
 
 int main(void) {
-  printf("Result: %08x\n", assembly());
+  printf("Result: %d\n", assembly());
 
   return 0;
 }
