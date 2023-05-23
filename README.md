@@ -23,3 +23,9 @@ $ gcc -c main.c -o main.o
 $ gcc assembly.obj main.o -o test -no-pie
 $ ./test
 ```
+
+## See symbols table for object files using GPP compiler tool:
+
+```bash
+$ objdump -t <file_object.o>
+```
