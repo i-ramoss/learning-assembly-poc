@@ -4,14 +4,11 @@ section .text
   global assembly
 
   assembly:
-    mov eax, 0
-    
-    mov rbx, 5
-    mov rcx, 7
-    cmp rbx, rcx
-    jle .end
+    mov eax, 3
+    call setarA
 
-    mov eax, 1
+    ret
 
-  .end:
+  setarA:
+    mov eax, 5
     ret
